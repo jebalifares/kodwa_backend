@@ -1,43 +1,23 @@
 package com.example.model;
 
 public class JwtRequest {
-	
-	String username;
-	String password;
-	
-	
-	public JwtRequest() {
-		
-	}
 
+    private String userName;
+    private String userPassword;
 
-	public JwtRequest(String username, String password) {
-		
-		this.username = username;
-		this.password = password;
-	}
+    public String getUserName() {
+        return userName;
+    }
 
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
 
-	public String getUsername() {
-		return username;
-	}
+    public String getUserPassword() {
+        return userPassword;
+    }
 
-
-	public void setUsername(String username) {
-		this.username = username;
-	}
-
-
-	public String getPassword() {
-		return password;
-	}
-
-
-	public void setPassword(String password) {
-		this.password = password;
-	}
-	
-	
-	
-
+    public void setUserPassword(String userPassword) {
+        this.userPassword = userPassword;
+    }
 }
